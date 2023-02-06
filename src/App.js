@@ -1,48 +1,21 @@
 import React from "react";
-import axios from "axios";
-import Movie from "./Movie";
-class App extends React.Component {
-    state = {
-        isLoading: true,
-        movies: [],
-    };
-    //js에게 getMovies() 함수는 시간이 필요
-    getMovies = async () => {
-        const {
-            data: {
-                data: { movies },
-            },
-        } = await axios.get('https://yts.mx/api/v2/list_movies.json?sort_by=rating');
-        console.log(movies);
-        this.setState({ movies, isLoading: false })
-    }
-    componentDidMount() {
-        this.getMovies();
-    }
-    render() {
-        const { isLoading, movies } = this.state;
-        return (
-            <section class="container">
-                {isLoading ? (
-                    <div class="loader">
-                        <span class="loader__text">Loading...</span>
-                    </div>
-                ) : (
-                    <div class="movies">
-                        {movies.map(movie => ( 
-                        <Movie
-                            key={movie.id}
-                            id={movie.id}
-                            year={movie.year}
-                            title={movie.title}
-                            summary={movie.summary}
-                            poster={movie.medium_cover_image}
-                        />
-                    ))}
-                    </div>
-                    )}
-            </section>
-        );
-    }
+//import Home from "./routes/Home";
+import './App.css';
+import{BrowserRouter, Route} from 'react-router-dom';
+import About from './routes/About';
+import Home from './routes/Home';
+import Navigation from './components/Navigation';
+import Detail from './routes/Detail';
+
+function App(){
+    return(
+        <BrowserRouter>
+            <Navigation />
+            <Route path="/" exact={true} component={Home}/>
+            <Route path="/about" component={About}/>
+            <Route path="/movie-detail" component={Detail}/>
+        </BrowserRouter>        
+    );
 }
+
 export default App;
