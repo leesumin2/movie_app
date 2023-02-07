@@ -1,5 +1,4 @@
 {
-  "homepage": "https://leesumin2.github.io/movie_app",
   "name": "movie_app",
   "version": "0.1.0",
   "private": true,
@@ -40,5 +39,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://leesumin2.github.io/movie_app"
 }
