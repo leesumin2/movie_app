@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/leesumin2/movie_app/static/css/main.ede2a510.css",
-    "main.js": "/leesumin2/movie_app/static/js/main.feebfd4f.js",
-    "index.html": "/leesumin2/movie_app/index.html",
-    "main.ede2a510.css.map": "/leesumin2/movie_app/static/css/main.ede2a510.css.map",
-    "main.feebfd4f.js.map": "/leesumin2/movie_app/static/js/main.feebfd4f.js.map"
+    "main.css": "/movie_app/static/css/main.ede2a510.css",
+    "main.js": "/movie_app/static/js/main.feebfd4f.js",
+    "index.html": "/movie_app/index.html",
+    "main.ede2a510.css.map": "/movie_app/static/css/main.ede2a510.css.map",
+    "main.feebfd4f.js.map": "/movie_app/static/js/main.feebfd4f.js.map"
   },
   "entrypoints": [
     "static/css/main.ede2a510.css",
