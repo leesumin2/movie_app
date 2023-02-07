@@ -1,5 +1,6 @@
 {
-  "name": "movie_app_2023",
+  "homepage": "https://github.com/leesumin2/movie_app",
+  "name": "movie_app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.2",
+    "gh-pages": "^5.0.0",
     "history": "^5.3.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -18,8 +20,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-page -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,7 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "https://github.com/leesumin2/movie_app"
+  }
 }
-
